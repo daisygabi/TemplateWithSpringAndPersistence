@@ -27,4 +27,4 @@ After successfully running the application, an entry will be added in the table 
 For more information on how to create more development environments in the project checkout this post: https://dev.to/gabriela/spring-boot-rest-api-and-flyway-migrations-a3a
 For Flyway documentation: https://flywaydb.org/
 
-All the names, credentials from above can and ~is recommended~ that you edit to make them unique to your project.
+All the names, credentials from above can and <b>is recommended</b> that you edit to make them unique to your project.
