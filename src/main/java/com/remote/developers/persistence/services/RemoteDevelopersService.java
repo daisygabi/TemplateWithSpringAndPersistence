@@ -13,12 +13,10 @@ import java.util.Optional;
 @Service
 public class RemoteDevelopersService {
 
-    private final RemoteDevelopersRepository remoteDevelopersRepository;
-
     @Autowired
-    public RemoteDevelopersService(RemoteDevelopersRepository remoteDevelopersRepository) {
-        this.remoteDevelopersRepository = remoteDevelopersRepository;
-    }
+    private RemoteDevelopersRepository remoteDevelopersRepository;
+
+    public RemoteDevelopersService() {}
 
     public Optional<RemoteDeveloper> findById(Long id) {
         return remoteDevelopersRepository.findById(id);
