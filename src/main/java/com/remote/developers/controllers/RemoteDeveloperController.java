@@ -32,7 +32,7 @@ public class RemoteDeveloperController {
         RemoteDeveloper remoteDeveloper = EntityHelper.convertToAbstractEntity(remoteDeveloperDto, RemoteDeveloper.class);
         RemoteDeveloper savedRemoteDeveloper = remoteDevelopersService.save(remoteDeveloper);
         if (savedRemoteDeveloper == null) {
-            return ResponseEntity.notFound().build();
+            return ResponseEntity.badRequest().build();
         } else {
             return ResponseEntity.ok(remoteDeveloper);
         }
