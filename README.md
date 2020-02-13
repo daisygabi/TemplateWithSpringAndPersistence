@@ -30,3 +30,6 @@ For much more details about Flyway please check their docs: https://flywaydb.org
 When you want to add more endpoints you need to allow them in the WebSecurityConfiguration class specifically or else you will get a HttpsStatus 404 back on trying to reach them.
 
 All the names and credentials from above <b>should be renamed and made unique for your project</b>.
+
+This project can be used only for ethical projects.
+Copyright @ Gabriela Radu 2020. MIT Licenced.
