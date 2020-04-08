@@ -17,11 +17,14 @@ Steps for getting started with it in Windows:
   REMOTEDEV_M_DB_PASS: admin
   REMOTEDEV_M_DB_PORT: 5433
 3. Import/Open your project in your editor
-4. Create SpringBoot application config with below details if you want to run the project from outside of a command line
+4. Create database from command line: (Go to bin folder from the Postgresql)
+$ createdb -h localhost -p 5433 -U postgres buyfood_db password *********
+
+5. Create SpringBoot application config with below details if you want to run the project from outside of a command line
   - Main Class: com.remote.developers.TemplateProjectApplication
   - JRE: 11 (at least)
   - For more information on how to create more development environments in the project checkout this post: https://dev.to/gabriela/spring-boot-rest-api-and-flyway-migrations-a3a
-5. Try running the unit tests and the integration tests that already exist. They should pass, by the way :)
+6. Try running the unit tests and the integration tests that already exist. They should pass, by the way :)
 
 Flyway is already configured and your first table will be created on running the application. The script is in resources/db.migration/V1__InitDatabase.sql
 After successfully running the application, an entry will be added in the table "flyway_schema_history".
